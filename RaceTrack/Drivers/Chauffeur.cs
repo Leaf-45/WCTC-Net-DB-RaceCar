@@ -7,18 +7,19 @@ using RaceTrack.RaceTrack.Cars;
 
 namespace RaceTrack.RaceTrack.Drivers
 {
-    public class SoccerMom : Driver
+    internal class Chauffeur : Driver
     {
-        public SoccerMom(RaceCar car) : base(car)
+        public Chauffeur(RaceCar car) : base(car)
         {
-            Name = "Soccer Mom";
-            SkillLevel = 6;
+            Name = "Chauffeur";
+            SkillLevel = 12;
         }
 
         public override void Drive()
         {
             Car.Accelerate(SkillLevel);
         }
+
         internal override void StopEngine()
         {
             Console.WriteLine($"{Name} has stopped their engine!");

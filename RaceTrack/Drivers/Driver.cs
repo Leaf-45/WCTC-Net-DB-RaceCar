@@ -34,5 +34,6 @@ namespace RaceTrack.RaceTrack.Drivers
 
         public abstract void Drive();
 
+        internal abstract void StopEngine();
     }
 }
